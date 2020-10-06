@@ -475,14 +475,9 @@
 
 
 
-<h3 id="4-7-4-关于ResultSet-接口中的注意事项"><a href="#4-7-4-关于ResultSet-接口中的注意事项" class="headerlink" title="4.7.4 关于ResultSet 接口中的注意事项"></a>4.7.4 关于ResultSet 接口中的注意事项</h3><ol>
-<li><p>如果光标在第一行之前，使用 rs.getXX()获取列值，报错：Before start of result set</p>
-</li>
-<li><p>如果光标在最后一行之后，使用 rs.getXX()获取列值，报错：After end of result set</p>
-</li>
-<li><p>使用完毕以后要关闭结果集 ResultSet，再关闭 Statement，再关闭 Connection</p>
-</li>
-</ol>
+<h3 id="4-7-4-关于ResultSet-接口中的注意事项"><a href="#4-7-4-关于ResultSet-接口中的注意事项" class="headerlink" title="4.7.4 关于ResultSet 接口中的注意事项"></a>4.7.4 关于ResultSet 接口中的注意事项</h3><p>1）如果光标在第一行之前，使用 rs.getXX()获取列值，报错：Before start of result set</p>
+<p>2）如果光标在最后一行之后，使用 rs.getXX()获取列值，报错：After end of result set</p>
+<p>3）使用完毕以后要关闭结果集 ResultSet，再关闭 Statement，再关闭 Connection</p>
 <h1 id="5-PreparedStatement"><a href="#5-PreparedStatement" class="headerlink" title="5. PreparedStatement"></a>5. PreparedStatement</h1><h2 id="5-1继承结构与作用"><a href="#5-1继承结构与作用" class="headerlink" title="5.1继承结构与作用"></a>5.1继承结构与作用</h2><img src="/2020/10/06/JDBC/PreparedStatement.png" alt="img" style="zoom:50%;">
 
 <p>==PreparedStatement== 是Statement 接口的子接口，继承与父接口中所有的方法。它是一个预编译的SQL语句。</p>
